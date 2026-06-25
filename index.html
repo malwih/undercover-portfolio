@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio map Roblox UNDERCOVER SOCIETY dengan tema underground cinematic." />
+  <meta name="theme-color" content="#070707" />
+  <title>UNDERCOVER SOCIETY</title>
+  <link rel="icon" type="image/png" href="assets/icon/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="fog fog-one"></div>
+  <div class="fog fog-two"></div>
+  <div class="spotlight"></div>
+
+  <audio id="bgMusic" class="hidden-audio" preload="auto" autoplay loop>
+    <source src="assets/music/background.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Nyalakan atau matikan musik">
+    <span class="music-dot"></span>
+    <span id="musicText">Music standby</span>
+  </button>
+
+  <main class="page-shell">
+    <section class="hero-card" aria-label="Portfolio UNDERCOVER SOCIETY">
+      <div class="badge-row">
+        <span class="status-dot"></span>
+        <span>7/24 HOURS OPEN MAP</span>
+      </div>
+
+      <div class="profile-wrap">
+        <div class="profile-ring">
+          <img
+            class="profile-photo"
+            src="assets/profile/profile.png"
+            alt="Foto profil UNDERCOVER SOCIETY"
+            onerror="this.onerror=null;this.src='assets/profile/profile-placeholder.svg';"
+          />
+        </div>
+      </div>
+
+      <p class="eyebrow">club and photo studio experience</p>
+      <h1>UNDERCOVER<br><span>SOCIETY</span></h1>
+      <p class="subtitle">
+        Masuki club paling vibes dengan nuansa street underground, musik seru, dan Photo Studio estetik untuk menghasilkan foto avatar yang keren!
+      </p>
+
+      <div class="action-grid">
+        <a class="action-btn discord" href="https://discord.com/invite/ucvr" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19.54 5.23A16.98 16.98 0 0 0 15.33 4a11.5 11.5 0 0 0-.54 1.11 15.82 15.82 0 0 0-4.69 0A11.5 11.5 0 0 0 9.56 4a17.08 17.08 0 0 0-4.22 1.24C2.67 9.19 1.95 13.02 2.31 16.8A17.18 17.18 0 0 0 7.48 19.4a12.6 12.6 0 0 0 1.11-1.79 10.8 10.8 0 0 1-1.75-.84c.15-.11.29-.22.43-.34a12.2 12.2 0 0 0 10.36 0c.14.12.29.23.43.34a10.8 10.8 0 0 1-1.75.84 12.6 12.6 0 0 0 1.11 1.79 17.13 17.13 0 0 0 5.18-2.6c.43-4.38-.74-8.18-3.06-11.57ZM8.68 14.48c-1.01 0-1.84-.93-1.84-2.06 0-1.14.81-2.07 1.84-2.07 1.03 0 1.86.93 1.84 2.07 0 1.13-.81 2.06-1.84 2.06Zm6.65 0c-1.01 0-1.84-.93-1.84-2.06 0-1.14.81-2.07 1.84-2.07 1.03 0 1.86.93 1.84 2.07 0 1.13-.81 2.06-1.84 2.06Z" />
+          </svg>
+          <span>DISCORD</span>
+        </a>
+
+        <a class="action-btn roblox" href="https://www.roblox.com/id/games/139035215430219/UNDERCOVER-SOCIETY" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.16 3 21 5.98 18.03 21 3 18.04 4.16 3Zm7.01 7.05-.72 3.67 3.67.72.72-3.67-3.67-.72Z" />
+          </svg>
+          <span>MAP UNDERCOVER</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="gallery-card" aria-label="Slide foto map UNDERCOVER SOCIETY">
+      <div class="gallery-head">
+        <div>
+          <p class="section-kicker">preview map</p>
+          <h2>Map Gallery</h2>
+        </div>
+        <div class="counter"><span id="currentSlide">01</span> / 07</div>
+      </div>
+
+      <div class="slider" id="slider">
+        <div class="slides" id="slides">
+          <article class="slide is-active">
+            <img src="assets/slides/slide-1.png" alt="Slide map UNDERCOVER SOCIETY 1" onerror="this.onerror=null;this.src='assets/slides/slide-placeholder-1.svg';" />
+          </article>
+          <article class="slide">
+            <img src="assets/slides/slide-2.png" alt="Slide map UNDERCOVER SOCIETY 2" onerror="this.onerror=null;this.src='assets/slides/slide-placeholder-2.svg';" />
+          </article>
+          <article class="slide">
+            <img src="assets/slides/slide-3.png" alt="Slide map UNDERCOVER SOCIETY 3" onerror="this.onerror=null;this.src='assets/slides/slide-placeholder-3.svg';" />
+          </article>
+          <article class="slide">
+            <img src="assets/slides/slide-4.png" alt="Slide map UNDERCOVER SOCIETY 4" onerror="this.onerror=null;this.src='assets/slides/slide-placeholder-4.svg';" />
+          </article>
+          <article class="slide">
+            <img src="assets/slides/slide-5.png" alt="Slide map UNDERCOVER SOCIETY 5" onerror="this.onerror=null;this.src='assets/slides/slide-placeholder-4.svg';" />
+          </article>
+          <article class="slide">
+            <img src="assets/slides/slide-6.png" alt="Slide map UNDERCOVER SOCIETY 6" onerror="this.onerror=null;this.src='assets/slides/slide-placeholder-4.svg';" />
+          </article>
+          <article class="slide">
+            <img src="assets/slides/slide-7.png" alt="Slide map UNDERCOVER SOCIETY 7" onerror="this.onerror=null;this.src='assets/slides/slide-placeholder-4.svg';" />
+          </article>
+        </div>
+
+        <button class="nav-btn prev" id="prevBtn" type="button" aria-label="Slide sebelumnya">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 5 8 12l7.4 7 1.6-1.7-5.6-5.3L17 6.7 15.4 5Z" /></svg>
+        </button>
+        <button class="nav-btn next" id="nextBtn" type="button" aria-label="Slide berikutnya">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 19 16 12 8.6 5 7 6.7l5.6 5.3L7 17.3 8.6 19Z" /></svg>
+        </button>
+      </div>
+
+      <div class="dots" id="dots" aria-label="Navigasi slide">
+        <button class="dot is-active" type="button" aria-label="Buka slide 1"></button>
+        <button class="dot" type="button" aria-label="Buka slide 2"></button>
+        <button class="dot" type="button" aria-label="Buka slide 3"></button>
+        <button class="dot" type="button" aria-label="Buka slide 4"></button>
+        <button class="dot" type="button" aria-label="Buka slide 5"></button>
+        <button class="dot" type="button" aria-label="Buka slide 6"></button>
+        <button class="dot" type="button" aria-label="Buka slide 7"></button>
+      </div>
+
+      <p class="asset-note">
+        Preview Map <strong>UNDERCOVER SOCIETY</strong> — geser untuk melihat suasana map underground cinematic.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
